@@ -50,9 +50,7 @@ let server = http.createServer((req, res) =>
       case "edit":
         path = "index.html";
         break;
-      default:
-        path = "404.html";  
-        break;
+        
     }
 
     let file = __dirname + "/" +  path;

@@ -51,7 +51,7 @@ let server = http.createServer((req, res) =>
         path = "index.html";
         break;
       default:
-        path = "404.html";  
+          
         break;
     }
 
