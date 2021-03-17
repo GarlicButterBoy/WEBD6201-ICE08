@@ -5,6 +5,7 @@
         "fontawesome",
         "fortawesome",
         "free",
+        "nosniff",
         "popperjs"
     ]
 }
