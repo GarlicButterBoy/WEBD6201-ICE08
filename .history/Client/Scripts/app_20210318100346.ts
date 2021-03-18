@@ -71,7 +71,7 @@ namespace core
     function loadHeader(pageName: string): void
     {
       // inject the Header
-      $.get("./components/header.html", function(data)
+      $.get("/components/header.html", function(data)
       {
         $("header").html(data); // load the navigation bar
         
@@ -92,7 +92,7 @@ namespace core
     function loadContent(pageName: string, callback: Function): void
     {
       // inject content
-      $.get(`./content/${pageName}.html`, function(data)
+      $.get(`./Views/content/${pageName}.html`, function(data)
       {
         $("main").html(data);
         toggleLogin();
@@ -109,7 +109,7 @@ namespace core
     function loadFooter(): void
     {
       // inject the Footer
-      $.get("./components/footer.html", function(data)
+      $.get("./Views/components/footer.html", function(data)
       {
         $("footer").html(data);
       });

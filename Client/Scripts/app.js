@@ -54,7 +54,7 @@ var core;
      */
     function loadHeader(pageName) {
         // inject the Header
-        $.get("./Views/components/header.html", function (data) {
+        $.get("./components/header.html", function (data) {
             $("header").html(data); // load the navigation bar
             $(`#${pageName}`).addClass("active"); // highlight active link
             addLinkEvents();
@@ -69,7 +69,7 @@ var core;
      */
     function loadContent(pageName, callback) {
         // inject content
-        $.get(`./Views/content/${pageName}.html`, function (data) {
+        $.get(`./content/${pageName}.html`, function (data) {
             $("main").html(data);
             toggleLogin();
             callback();
@@ -81,7 +81,7 @@ var core;
      */
     function loadFooter() {
         // inject the Footer
-        $.get("./Views/components/footer.html", function (data) {
+        $.get("./components/footer.html", function (data) {
             $("footer").html(data);
         });
     }
