@@ -6,14 +6,7 @@
   "repository": "https://github.com/GarlicButterBoy/WEBD6201-ICE08",
   "author": "Nick Sturch-Flint <nicholas.sturchflint@dcmail.ca",
   "license": "MIT",
-  "engines": {
-     "node": "^14.0.0",
-     "npm": "^6.1.0" 
-  },
   
-  "scripts": {
-    "start": "node index.js"
-  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@popperjs/core": "^2.6.0",

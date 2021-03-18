@@ -7,7 +7,7 @@ const path = require("path");
 //const http = require('http');
 const express = require("express"); //third party - install with yarn add express or npm install express --save
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || '3000';
 const HOST = "localhost";
 //static files include
 app.use(express.static(path.join(__dirname, 'node_modules')));

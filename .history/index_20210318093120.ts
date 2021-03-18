@@ -7,7 +7,9 @@ import path = require('path');
 import express = require('express'); //third party - install with yarn add express or npm install express --save
 const app = express();
 
-const PORT = process.env.PORT || '3000';
+
+
+const PORT = 3000;
 const HOST:string = "localhost";
 
 //static files include
