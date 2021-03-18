@@ -217,7 +217,9 @@ var core;
             // check to see if key is empty
             if (key == "") {
                 // create a new key
-                key = contact.FullName.substring(0, 1) + Date.now();
+                if (contact.serialize()) {
+                    key = contact.FullName.substring(0, 1) + Date.now();
+                }
             }
             // copy contact info from form to contact object
             contact.FullName = $("#fullName").val().toString();

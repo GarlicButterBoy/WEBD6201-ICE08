@@ -297,13 +297,10 @@ namespace core
       if(key != undefined && key != "")
       {
         // get contact info from localStorage
-        contact.deserialize(localStorage.getItem(key))
+       if (contact.serialize)
+       {
 
-        // display contact information in the form
-        $("#fullName").val(contact.FullName);
-        $("#contactNumber").val(contact.ContactNumber);
-        $("#emailAddress").val(contact.EmailAddress);
-       
+       }
         
       }
       else
@@ -323,11 +320,7 @@ namespace core
           if(key == "")
           {
             // create a new key
-            if (contact.serialize())
-            {
-              key = contact.FullName.substring(0, 1) + Date.now();
-            }
-            
+            key = contact.FullName.substring(0, 1) + Date.now();
           }
 
           // copy contact info from form to contact object

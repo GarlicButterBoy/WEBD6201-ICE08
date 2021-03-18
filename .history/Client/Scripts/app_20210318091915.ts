@@ -297,6 +297,8 @@ namespace core
       if(key != undefined && key != "")
       {
         // get contact info from localStorage
+       if (contact.serialize)
+       {
         contact.deserialize(localStorage.getItem(key))
 
         // display contact information in the form
